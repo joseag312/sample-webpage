@@ -1,0 +1,80 @@
+.navbar-nav .nav-item.active .nav-link {
+  font-weight: bolder;
+}
+
+#contents.loading {
+  display: none;
+}
+
+#contents:not(.loading) {
+  display: block;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #000000;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.log-container tbody {
+  display: block;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.table thead,
+.table tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.logs {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white; /* Optional: to distinguish the container from the rest of the page */
+  padding: 10px;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Optional: for better visibility */
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  height: 80%; /* Ensure the container takes up full height */
+}
+
+.form-content {
+  flex-grow: 1; /* Ensures the content grows to fill available space */
+}
+
+button {
+  margin-top: auto; /* This will push the button to the bottom */
+}
+
+.h-50 {
+  height: 50%;
+}
+
+.mb-6 {
+  margin-bottom: 6rem;
+}
+
+.toast-header {
+  border-bottom: 0px;
+}
